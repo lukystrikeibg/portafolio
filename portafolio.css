@@ -128,6 +128,7 @@ h1{
     margin:0 auto;
     object-fit: contain;
     background-image: url('./imagenes/ndvim.png');
+    border-radius: 5px;
 }
 
 .item2 span{
@@ -174,6 +175,28 @@ span{
     margin-top: 2rem;
     
 }
+
+
+/* seccion */
+
+.about{
+    padding-top: 70px;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 60vh;
+    margin: 0 auto;
+    min-width: 300px;
+   text-align: center;
+}
+
+.about h2{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    color:var(--off-white);
+}
+
 
 
 /* medias queries */
