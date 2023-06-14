@@ -121,11 +121,17 @@ h1{
 }
 
 
+.info-content .item{
+    width: 85%;
+    padding: 10px;
+}
+
 
 .info-content .item2{
-    width: 100%;
+    width: 85%;
     height: 100%;
     margin:0 auto;
+    padding: 20px;
     object-fit: contain;
     background-image: url('./imagenes/ndvim.png');
     border-radius: 5px;
@@ -184,9 +190,10 @@ span{
     font-size: 1.5rem;
     width: 100%;
     height: 60vh;
-    margin: 0 auto;
+    margin: 5px auto;
     min-width: 300px;
-   text-align: center;
+
+    text-align:justify;
 }
 
 .about h2{
@@ -196,7 +203,123 @@ span{
     padding-bottom: 1rem;
     color:var(--off-white);
 }
+.about p{
+    padding: 10px;
+}
 
+/* seccion de habilidades */
+
+.about h3{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    color:var(--off-white);
+}
+
+
+
+.img-container {
+    margin-top: 2rem;
+    display:grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: 150px;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    background-size: 20px;
+    width:90%;
+    margin: 2% auto;
+    color: #fff;
+}
+
+.img-container img:hover{
+    background-color:black;
+}
+.img-container p:hover{
+    background-color:black;
+}
+
+
+/* proyectos */
+
+.main-projects{
+
+    padding-top:250px ;
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+
+.project--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.project--title h2 {
+    margin-top: 20px;
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--off-white);
+}
+
+.project-container--card{
+    position:relative; 
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 200px;
+    margin:50px auto 0;
+    padding: 0 15px;
+    background-color: var(--off-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.16);
+    background-image: url("./imagenes/mapa_vancuverndvia42.png");
+}
+
+.project--title--a{
+    position: absolute;
+    width:120px;
+    height: 31px;
+    padding: 6px;
+    top:-15px;
+    left:calc(50% - 60px) ;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color:var(--warm-black);
+}
+
+
+
+.project-description{
+    padding-top: 150px;
+    font-size: 2rem;
+    font-weight: bold;
+    
+    color:var(--warm-black);
+}
+
+.project-description--ca{
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: salmon;
+    border:2px solid var(--warm-black);
+    border-radius: 4px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
 
 
 /* medias queries */
@@ -210,6 +333,14 @@ span{
         margin-top: 150px;
 
     }
+
+    .img-container{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-auto-flow: none;
+    }
+
+   
     
 }
 
