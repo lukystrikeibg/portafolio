@@ -274,11 +274,15 @@ span{
     color: var(--off-white);
 }
 
+::-webkit-scrollbar {
+    display: none;
+} 
+
 .project-container-slider{
     display:flex;
     gap:30px;
     height: 350px;
-    overflow-x: scroll;
+    overflow-x:scroll;
     overscroll-behavior-x:contain ;
     scroll-snap-type:x proximity;
 }  
