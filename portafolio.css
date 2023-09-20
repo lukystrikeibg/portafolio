@@ -280,8 +280,8 @@ span{
 
 .project-container-slider{
     display:flex;
-    gap:30px;
-    height: 350px;
+    gap:100px;
+    height: 500px;
     overflow-x:scroll;
     overscroll-behavior-x:contain ;
     scroll-snap-type:x proximity;
@@ -290,30 +290,35 @@ span{
 
 .project-container--card{
     position:relative; 
-    scroll-snap-align: center;
+    scroll-snap-align: initial;
     width: 90%;
     min-width: 230px;
-    max-width: 250px;
+    max-width: 350px;
     height: 300px;
     margin:50px auto 0;
     padding: 0 15px;
     
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.16);
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.16); */
     
     text-align: center;
+    align-items: initial;
 }
 
 .project--title--a{
     position: absolute;
     width:120px;
-    height: 40px;
-    font-size: 15px;
+    height: 45px;
+    font-size: 12px;
     top:-50px;
     left:calc(50% - 60px) ;
     background-color: var(--bitcoin-orange);
     border-radius: 8px;
     color:var(--warm-black);
+    justify-content: center;
+    align-items: center;
+    
+   
 }
 
 
@@ -322,7 +327,7 @@ span{
 
  .project-description {
     position: relative;
-    top:10rem;
+    top: 1rem;
     font-size: 1.2rem;
     font-weight: bold;
     line-height: 2rem;
@@ -334,7 +339,7 @@ span{
 .project-description--ca{
     width: 150px;
     height: 35px;
-    margin-top: 1;
+    margin-top: 10px;
     background-color: salmon;
     border:2px solid var(--warm-black);
     border-radius: 5px;
