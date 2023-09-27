@@ -23,6 +23,7 @@
     --yellow:  yellow;
     --pink: #ee82ee;
     --gris:grey;
+    --black-blue: #021966e1;
 
 }
 
@@ -39,7 +40,7 @@ html {
 
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif ;
-    background-color: var(--secondary-blue);
+    background-color: var(--black-blue);
     
 
 }
@@ -102,6 +103,11 @@ h1{
     background-color:black;
 }
 
+
+#menu, #menu-check{
+    display: none;
+}
+
 /* seccio de inicio */
 
 
@@ -124,6 +130,7 @@ h1{
 .info-content .item{
     width: 85%;
     padding: 10px;
+    color:var(--grey)
 }
 
 
@@ -192,7 +199,7 @@ span{
     height: 60vh;
     margin: 5px auto;
     min-width: 300px;
-
+    color: var(--grey);
     text-align:justify;
 }
 
@@ -394,6 +401,47 @@ span{
 /* medias queries */
 
 @media screen and (max-width:768px) {
+    
+    #menu-check:not(:checked) ~ nav{
+        display:none;
+    }
+    
+    #menu-check:checked ~ nav{
+        display: block;
+    }
+
+    #menu{
+        display: block;
+        color: white;
+        background-color: var(--off-white);
+        font-size: 1.2em;
+        font-weight: bold;
+        position: absolute;
+        right: 0.5em;
+        top:8rem
+    }
+
+    #menu-cerrar{
+        display: none;
+
+    }
+
+    #menu-check:checked ~ label #menu-abrir{
+        display:none;
+    }
+
+    #menu-check:checked ~ label #menu-cerrar{
+        display:block;
+    }
+
+    .main-nav {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+
+
+
     .info-content{
         grid-template-columns: 1fr;
         
