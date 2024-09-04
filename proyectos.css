@@ -26,6 +26,12 @@
     --black-blue: #021966e1;
 
 }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
 
 
 body {
@@ -66,7 +72,7 @@ nav a {
 
 .project-card {
     display: flex; /* Usa flexbox para alinear la imagen y la descripción */
-    background-color: white;
+    background-color:var(--off-white);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -112,4 +118,36 @@ footer {
     padding: 20px;
     background-color: #282623;
     color: white;
+}
+
+/* Media Queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .projects-container {
+        padding: 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .project-card {
+        flex-direction: column; /* Cambia a columna para móviles */
+        width: 90%; /* Aumenta el ancho para móviles */
+    }
+
+    .project-card img {
+        width: 100%; /* La imagen ocupa todo el ancho disponible */
+    }
+
+    .project-description {
+        padding: 10px; /* Reduce el padding en la descripción */
+    }
+
+    .project-card h2 {
+        font-size: 1.2rem; /* Reduce el tamaño de la fuente del título */
+    }
+
+    .project-card p {
+        font-size: 0.9rem; /* Reduce el tamaño de la fuente de la descripción */
+    }
+
+    .project-card a {
+        padding: 8px 12px; /* Reduce el padding del botón */
+    }
 }
