@@ -74,6 +74,7 @@ nav a {
     display: flex; /* Usa flexbox para alinear la imagen y la descripción */
     background-color:var(--off-white);
     border-radius: 10px;
+    border-image: varr(--warm-black);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     margin: 20px 0; /* Espaciado entre proyectos */
@@ -83,6 +84,8 @@ nav a {
 .project-card img {
     width: 300px; /* Ancho fijo para la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
+    border-color: var(--black);
+    border-width: 2px;
 }
 
 .project-description {
@@ -115,7 +118,7 @@ nav a {
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #282623;
     color: white;
 }
