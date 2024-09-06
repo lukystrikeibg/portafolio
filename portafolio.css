@@ -376,6 +376,7 @@ span{
     
     #menu-check:checked ~ nav{
         display: block;
+        margin-bottom: 5rem;
     }
 
     #menu{
